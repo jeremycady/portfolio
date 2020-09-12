@@ -1,5 +1,9 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+const { projects } = require('./projects.json');
+
+app.use(bodyParser.urlencoded( {extended: false} ))
 
 app.use('/static', express.static('public'));
 
@@ -14,7 +18,7 @@ app.use('/project', (req, res) => {
 });
 
 app.use('/', (req, res) => {
-  res.render('index');
+  res.render('index', { projects });
 });
 
 app.listen('3000');
