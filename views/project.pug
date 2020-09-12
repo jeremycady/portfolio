@@ -10,21 +10,17 @@ block content
           if project.github_name === projectId
             .cell.small-6.medium-9.large-9
 
-              //- Use interpolation to dynamically add the project title.
               h1 #{project.name}
 
-              //- Use interpolation to dynamically add the project description.
               p.lead.text-light= project.description
 
             .cell.portfolio-meta.small-6.medium-2.large-3
               h6 Technologies
 
-              //- Use an `each` iterator to replace the li tags below and interpolation to dynamically add the technologies used in each project.
               ul
                 each technology in project.technologies
                   li= technology
                
-              //- Use template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
               a.button.expanded(href=`https://jeremycady.github.io/${project.github_name}/`, target='_blank') Live Demo
               a.button.expanded(href=`https://github.com/jeremycady/${project.github_name}`, target='_blank') GitHub Repo
           
