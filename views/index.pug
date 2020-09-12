@@ -2,25 +2,14 @@ extends layout.pug
 
 block content 
   article.grid-container.portfolio-intro
-    if err
-    
-    else
     div
-
       h1 My Portfolio
-
       p.lead.text-light
         | This is an example of projects I have completed.
   article.grid-container.portfolio-index
-    if err 
-        h2 #{err.status}: #{err.message}
-        form(method='get' action='/')
-          button(type='submit') Home Page
-    else 
-      .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
- 
-        each project in projects
-          .cell 
-            a(href=`/projects/${project.github_name}`)
-              img.thumbnail(src=`/static/images/${project.github_name}-sml.png`)
-              h5= project.name
+    .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
+      each project in projects
+        .cell 
+          a(href=`/projects/${project.github_name}`)
+            img.thumbnail(src=`/static/images/${project.github_name}-sml.png`)
+            h5= project.name

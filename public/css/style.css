@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,p{
 
 a{
   color: #333;
+  cursor: pointer;
 }
 
 a:hover{
@@ -58,8 +59,8 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
-  color: #fff;
+  background: #25283D;
+  color: #EFD9CE;
   box-shadow: none !important;
 }
 
@@ -122,11 +123,16 @@ a:hover{
 
   .portfolio-index .cell{
     margin-bottom: 15px;
+    transition: transform .1s;
   }
 
     .portfolio-index .cell h5{
       letter-spacing: 1px;
     }
+  
+  .portfolio-index .cell:hover{
+    transform: scale(1.05);
+  }
 
 .portfolio-meta{
   padding-left: 20px;
@@ -153,5 +159,10 @@ button {
   background-color: #111;
   color: #fff;
   padding: 10px;
-  cursor: pointer;
 }
+
+.off-canvas-content.has-reveal-left {
+  background: #98DFEA;
+  color: #25283D;
+}
+

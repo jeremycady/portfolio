@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content 
+  article.grid-container.portfolio-intro
+    div
+      h1 My Portfolio
+      p.lead.text-light
+        | This is an example of projects I have completed.
+  article.grid-container.portfolio-index
+    h2 #{err.status}: #{err.message}
+    form(method='get' action='/')
+      button(type='submit') Home Page

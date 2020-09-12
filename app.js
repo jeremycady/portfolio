@@ -18,11 +18,13 @@ app.use(routes);
 // check for 404 or return 500 error
 app.use((err, req, res, next) => {
   if (err.status === 404) {
-    res.render('index', { err });
+    console.log(`${err.status}: ${err.message}`);
+    return res.render('page-not-found', { err });
   } else {
     err.status = 500;
-    err.message = 'There was an issue on the server';
-    res.render('index', { err });
+    err.message = "There was an error on the server"
+    console.log(`${err.status}: ${err.message}`);
+    return res.render('error', { err });
   }
 });
 
