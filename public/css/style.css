@@ -1,3 +1,7 @@
+body {
+  background: #98DFEA;
+  color: #25283D;
+}
 
 h1,h2,h3,h4,h5,p{
   font-family: 'Merriweather', serif;
@@ -160,9 +164,3 @@ button {
   color: #fff;
   padding: 10px;
 }
-
-.off-canvas-content.has-reveal-left {
-  background: #98DFEA;
-  color: #25283D;
-}
-
