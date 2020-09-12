@@ -148,3 +148,10 @@ a:hover{
 .portfolio-bio{
     line-height: 25px;
 }
+
+button {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}

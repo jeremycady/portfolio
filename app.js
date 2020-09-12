@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const { projects } = require('./projects.json');
+const mainRoutes = require('./routes');
+const projectRoutes = require('./routes/projects');
 
 app.use(bodyParser.urlencoded( {extended: false} ))
 
@@ -9,17 +10,12 @@ app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
 
-app.use('/about', (req, res) => {
-  res.render('about');
-});
+app.use(mainRoutes);
+app.use('/project', projectRoutes);
 
-app.use('/project/:id', (req, res) => {
-  const projectId = req.params.id;
-  res.render('project', { projects, projectId});
-});
-
-app.use('/', (req, res) => {
-  res.render('index', { projects });
+app.use((err, req, res, next) => {
+  res.locals.error = err;
+  res.render('index', { err });
 });
 
 app.listen('3000');
