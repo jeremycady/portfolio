@@ -1,8 +1,8 @@
 # Portfolio
 
-This is a portfolio of my current projects.
+This is a portfolio of my previous projects.
 
-*Technologies used 
+* Technologies used 
   * JavaScript
   * Node
   * Express
