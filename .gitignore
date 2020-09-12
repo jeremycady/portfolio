@@ -30,4 +30,4 @@ Temporary Items
 .apdisk
 
 # Additional Items
-.code-workspace
+*.code-workspace
