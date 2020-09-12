@@ -31,3 +31,7 @@ Temporary Items
 
 # Additional Items
 *.code-workspace
+example-html
+mockups
+package-lock.json
+node_modules
