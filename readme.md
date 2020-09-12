@@ -2,11 +2,11 @@
 
 This is a portfolio of my previous projects.
 
-* Technologies used 
-  * JavaScript
-  * Node
-  * Express
-  * PUG
+Technologies used 
+* JavaScript
+* Node
+* Express
+* PUG
 
 A JSON file holds an array of projects which are dynamically served to the client.
 
