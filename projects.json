@@ -18,7 +18,7 @@
       "id": "02",
       "name": "Interactive Form",
       "github_name": "interactive-form",
-      "description": "This is a static HTML form made interactive with JavaScript. When JS is active the form performs the following: <ul><li>The <i>Other</i> job role is hidden unless selected in the job role selection.</li><li>T-shirt colors will render when the corresponding design is selected.</li><li>The activity form renders the total and disables activities that occur at the same time.</li><li>The payment area will show the corresponding information with type of payment selected.</li><li>The form validates the name, email, activities, and credit card information before the form may be submitted.</li><li>When email validation fails, the form displays different error messages.<li>Displays an error when a proper email address is not entered.</li><li>Displays an error when the email field becomes empty.</li></li></ul>",
+      "description": "This is a static HTML form made interactive with JavaScript. When JS is active the form performs the following: The Other job role is hidden unless selected in the job role selection.T-shirt colors will render when the corresponding design is selected.The activity form renders the total and disables activities that occur at the same time.The payment area will show the corresponding information with type of payment selected.The form validates the name, email, activities, and credit card information before the form may be submitted.When email validation fails, the form displays different error messages.Displays an error when a proper email address is not entered.Displays an error when the email field becomes empty.",
       "technologies": ["HTML", "CSS", "JavaScript"]
     },
     {

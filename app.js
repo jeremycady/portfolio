@@ -13,8 +13,9 @@ app.use('/about', (req, res) => {
   res.render('about');
 });
 
-app.use('/project', (req, res) => {
-  res.render('project');
+app.use('/project/:id', (req, res) => {
+  const projectId = req.params.id;
+  res.render('project', { projects, projectId});
 });
 
 app.use('/', (req, res) => {
